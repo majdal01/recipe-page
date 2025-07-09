@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}   
+
+:root {
+    /* Colors */
+    --white-color: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose--800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    /* Typography */
+    --font-family-headings: 'Young Serif', serif;
+    --font-family-body: 'Outfit', sans-serif;
+    /* Spacing */
+    --spacing-1600: 8rem; /* 128px */
+    --spacing-600: 3rem; /* 48px */
+    --spacing-500: 2.5rem; /* 40px */
+    --spacing-400: 2rem; /* 32px */
+    --spacing-300: 1.5rem; /* 24px */
+    --spacing-200: 1rem; /* 16px */
+    --spacing-150: 0.75rem; /* 12px */
+    --spacing-100: 0.5rem; /* 8px */
+}
+
+
+
+
+
+
+/* Attribution default from Frontend Mentor */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

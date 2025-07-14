@@ -119,7 +119,7 @@ ol li::marker {
 }
 
 .omelette-image {
-    height: 18.75rem;
+    height: fit-content;
     width: 100%;
     border-radius: var(--spacing-150);
 }
@@ -166,6 +166,25 @@ td:last-child {
     color: var(--brown-800);
 }
 
-/* Attribution default from Frontend Mentor */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 768px) {
+    .recipe-page {
+        margin: var(--spacing-1600) var(--spacing-600);
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-page {
+        margin: 0 auto;
+        border-radius: 0;
+        padding: var(--spacing-500) var(--spacing-400);
+    }
+
+    .omelette-image {
+        height: max-content;
+        width: calc(100% + var(--spacing-400) * 2);
+        margin-left: calc(-1 * var(--spacing-400));
+        margin-right: calc(-1 * var(--spacing-400));
+        margin-top: calc(-1 * var(--spacing-500));
+        border-radius: 0;
+    }
+}

@@ -41,6 +41,9 @@ body, html {
    background-color: var(--white-color);
    border-radius: var(--spacing-300);
    margin: var(--spacing-1600) auto;
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-400);
 }
 
 h1 {
@@ -55,6 +58,7 @@ h2 {
     font-size: 1.75rem; /* 28px */
     line-height: 100%;
     letter-spacing: 0;
+    color: var(--rose--800);
 }
 
 h3 {
@@ -63,6 +67,7 @@ h3 {
     line-height: 100%;
     letter-spacing: 0;
     font-weight: 600;
+    color: var(--rose--800);
 }
 
 p {
@@ -71,10 +76,46 @@ p {
     line-height: 150%;
     letter-spacing: 0;
     font-weight: 400;
+    color: var(--stone-600);
 }
 
 .p-bold {
     font-weight: 700;
+}
+
+ul, ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+    padding-left: var(--spacing-300);
+}
+
+li {
+    padding-left: var(--spacing-150);
+    font-family: var(--font-family-body);
+    color: var(--stone-600);
+    line-height: 150%;
+}
+
+li::marker {
+    color: var(--rose--800);
+    font-family: var(--font-family-body);
+}
+
+ol li::marker {
+    font-weight: 800;
+}
+
+.divider {
+    color: var(--stone-150);
+    border-top: 1px solid var(--stone-150);
+    border-bottom: none;
+}
+
+.section-space {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
 }
 
 .omelette-image {
@@ -83,8 +124,47 @@ p {
     border-radius: var(--spacing-150);
 }
 
+.recipe-header {
+    margin-top: var(--spacing-500);
+}
 
+.preparation-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    background-color: var(--rose-50);
+    padding: var(--spacing-300);
+    border-radius: var(--spacing-150);
+}
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: var(--spacing-150) var(--spacing-400);
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+td:first-child {
+    color: var(--stone-600);
+}
+
+td:last-child {
+    font-weight: 700;
+    color: var(--brown-800);
+}
 
 /* Attribution default from Frontend Mentor */
 .attribution { font-size: 11px; text-align: center; }
